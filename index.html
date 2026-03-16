@@ -10,7 +10,30 @@
 
     <button class="btn btn-info" onclick="teamrank()">Team Rank</button>
     <script>
-        let team = "Sidewinders";
+
+        function teamrank(){
+            var rank = "1st";
+            message = "";
+                switch(true)
+            {
+                case (rank === "1st") :
+                    message = "First";
+                    break;
+                case (rank === "2nd") :
+                    message = "Second";
+                    break;
+                case (rank === "3rd") :
+                    message = "Third";
+                    break;
+                case (rank === "4th") :
+                    message = "Fourth";
+                    break;
+                default:
+                    message = "Invalid rank";
+        }
+          alert(message);
+    }
+        let team = "Red Bulldogs";{
 
         switch (team){
             case "Red" :
@@ -26,7 +49,8 @@
                 alert("Go Yellow Tigers!");
             default :
             alert("What team is this bro?");           
-        }   
+        }
+    }    
     </script>
 </body>
 </html>
